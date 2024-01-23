@@ -15,4 +15,14 @@ print(tup[-2])
 print(tup[-3:-1])
 # เวลาระบุขอบเขตของ index ต้องใช้ []
 
+# change tuple to list
+tup=(1,2,3,4,"mango", "Kong", True, 3.9)
+print("before =>", tup)
+lis=list(tup) 
+lis[0]="Bangkok" #if you have already changed tuple to list, you can edit the data.
+
+tup=tuple(lis)
+print("after =>", tup)
+# tup[0]="Bangkok"
+
 
